@@ -5,8 +5,16 @@ module.exports = {
   mode:"development",
   output: {
     filename: 'bundle.main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './public/dist'),
     clean: true,
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, './public'),
+    },
+    compress: true,
+    port: 9000,
+    open: true,
   },
   module: {
         rules: [

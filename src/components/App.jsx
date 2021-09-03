@@ -1,20 +1,19 @@
-import React,{useEffect,useState} from 'react'
-import {useStore} from 'react-redux';
-
+import React from 'react'
+import {BrowserRouter as Router } from "react-router-dom";
+// import {useStore} from 'react-redux';
+import NavBar from './NavBar/NavBar.jsx';
+import Footer from './Footer/Footer.jsx';
+import Switch from './Router/Switch.jsx';
 
 function App(){
-    let [user,setUser] = useState('');
-    let store = useStore();
-    useEffect(function(){
-        let s = select(store.getState()); 
-        setUser(s);
-    })
-    function select(item){
-        return item.me;
-    };
     return <>
-        <h3>Hello</h3>
-        <h3>{user}</h3>
+        <Router>
+            <NavBar></NavBar>
+            <Switch></Switch>
+        </Router>
+        
+        {/* CurrentPage */}
+        <Footer></Footer>
     </>
 }
 export default App;

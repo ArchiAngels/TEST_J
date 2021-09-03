@@ -1,0 +1,71 @@
+@import '../../app/colors.scss';
+.NavBar_container{
+    width:100vw;
+    height:100px;
+    background: $blue;
+    color:#fff;
+    & .NavBar_content{
+        max-width:1167.6px;
+        height:inherit;
+        margin: 0 auto;
+        font-family: Roboto;
+        font-style: normal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+
+        & .logo{
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        & .Ul_links{
+            height:40px;
+            width:993px;
+            border: 1px solid #ffffff30;
+            border-bottom: none;
+            border-top: none;
+            display: flex;
+            list-style: none;
+            padding: 0 30px;
+            margin:0 30px;
+            text-align: center;
+            & .li_left_50{
+                margin:0 0 0 50px;
+            }
+            & .li_last{
+                margin: 0 0 0 auto;
+            }
+            // & li{
+            //     margin:0 0 0 
+            // }
+            & p{
+                font-weight: normal;
+                font-size: 16px;
+                text-transform: capitalize;
+                transform: translateY(50%);
+            }
+        }
+        & .links_icon{
+            display: flex;
+            width:128.6px;
+            justify-content: space-between;
+            & .link_user{
+                position: relative;
+                
+                & .head{
+                    position: absolute;
+                    left:6px;
+                }
+                & .body{
+                    position: absolute;
+                    left:3px;
+                    top:11px;
+                }
+            }
+        }
+        
+    }
+}
