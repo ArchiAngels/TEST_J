@@ -1,0 +1,100 @@
+@import '../../app/variables.scss';
+.Footer_container{
+    width:100vw;
+    height:381px;
+    background-image: linear-gradient(to bottom,#287194, #0F435B);
+    & .Footer_content{
+        max-width: $max_content_width;
+        margin:0 auto;
+        padding: 80px 0;
+        color:#fff;
+        & ul{
+            list-style: none;
+        }
+        & .Footer_ul{
+            font-family: Roboto;
+            font-style: normal;
+            display: flex;
+            justify-content: space-between;
+
+            
+            & h3{
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 20px;
+                // line-height: 23px;
+
+                // text-align: right;
+            }
+            & .ul_category{
+                
+                // line-height: 19px;
+                & .icon_wrap{
+                    display: inline-block;
+                    width:20px;
+                    height:12px;
+                    margin: 0 15px 0 0;
+                }
+                & a{
+                    &[href='mailto:collection.@info.com'], &[href='#map']{
+                        text-transform: none;
+                    }
+                    position: absolute;
+                }
+                & a,p{
+                    color: #fff;
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    opacity: 0.85;
+                }
+                & li{
+                    
+                    margin: 30px 0;
+                }
+                & .Mail_icon{
+                    
+                    position: relative;
+                    & img{
+                        position: absolute;
+                    }
+                    & img:nth-child(2){
+                        top:4px;
+                    }
+                }
+                & .SocialNetworks{
+                    display: flex;
+                    & div{
+                        margin:0 27px 0 0;
+                    }
+                    & .customIcon{
+                        position: relative;
+                        
+                        & img{
+                            position: absolute;
+                        }
+                        &.instagram{
+                            & img:nth-child(2){
+                                top:4px;
+                                left:4px;
+                            }
+                            & img:nth-child(3){
+                                top:3px;
+                                left:14px;
+
+                            }
+                        }
+                        &.google{
+                            & img:nth-child(2){
+                                top:4px;
+                                left:20px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -27,15 +27,15 @@ function NavBar(){
                         <p>Credit</p>
                     </li>
                     <li className='li_last'>
-                        <p>Catalog <img src={Arrow_down}></img></p>
+                        <p>Catalog <img src={Arrow_down} alt='Arrow icon'></img></p>
                     </li>
                 </ul>
                 <div className='links_icon'>
                     <img src={Like}></img>
-                    <Link to='/basket'><img src={Basket}></img></Link>
+                    <Link to='/basket'><img src={Basket} alt='Basket icon'></img></Link>
                     <div className='link_user'>
-                        <img src={User_1} className='head'></img>
-                        <img src={User_2} className='body'></img>
+                        <img src={User_1} className='head' alt='Head of user icon'></img>
+                        <img src={User_2} className='body' alt='Body of user icon'></img>
                     </div>
                 </div>
             </nav>

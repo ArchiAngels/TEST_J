@@ -1,11 +1,11 @@
-@import '../../app/colors.scss';
+@import '../../app/variables.scss';
 .NavBar_container{
     width:100vw;
     height:100px;
     background: $blue;
     color:#fff;
     & .NavBar_content{
-        max-width:1167.6px;
+        max-width:$max_content_width;
         height:inherit;
         margin: 0 auto;
         font-family: Roboto;
@@ -54,6 +54,7 @@
             justify-content: space-between;
             & .link_user{
                 position: relative;
+                width:20px;
                 
                 & .head{
                     position: absolute;
