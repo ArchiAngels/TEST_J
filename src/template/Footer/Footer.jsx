@@ -1,23 +1,23 @@
 import React from 'react';
 import './Footer.scss';
 
-import Phone from '../../media/phone-i.svg';
+import Phone from '../../media/footer/phone-i.svg';
 
-import Mail_top from '../../media/mail-top.svg';
-import Mail_bottom from '../../media/mail-bottom.svg';
+import Mail_top from '../../media/footer/mail-top.svg';
+import Mail_bottom from '../../media/footer/mail-bottom.svg';
 
-import Map from '../../media/map-i.svg';
+import Map from '../../media/footer/map-i.svg';
 
-import Fb from '../../media/f-i.svg';
+import Fb from '../../media/footer/f-i.svg';
 
-import Inst_border from '../../media/in-b-i.svg';
-import Inst_circl from '../../media/in-ci-i.svg';
-import Inst_point from '../../media/in-p-i.svg';
+import Inst_border from '../../media/footer/in-b-i.svg';
+import Inst_circl from '../../media/footer/in-ci-i.svg';
+import Inst_point from '../../media/footer/in-p-i.svg';
 
-import Google_g from '../../media/g-i.svg';
-import Google_p from '../../media/g-p.svg'
+import Google_g from '../../media/footer/g-i.svg';
+import Google_p from '../../media/footer/g-p.svg'
 
-import Twitter from '../../media/tw-i.svg'
+import Twitter from '../../media/footer/tw-i.svg'
 
 function Footer(){
     return <>

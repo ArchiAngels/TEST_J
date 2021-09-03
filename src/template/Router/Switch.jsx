@@ -9,7 +9,7 @@ import NoMatch from '../NoMatch/NoMatch.jsx';
 function mySwitch(){
     return <>
         <Switch>
-            <Route exact path='/'>
+            <Route exact path='/ProductCard'>
                 <Product />
             </Route>
             <Route exact path='/basket'>

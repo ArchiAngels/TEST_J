@@ -1,0 +1,129 @@
+@import '../../app/variables.scss';
+.NavBar_container{
+    width:100vw;
+    height:200px;
+    color:#fff;
+    & .NavBar_content{
+        max-width:$max_content_width;
+        margin: 0 auto;
+        font-family: Roboto;
+        font-style: normal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .NavBar_wrap{
+        height:100px;
+        background: $blue;
+        & .NavBar_content{
+
+            height:inherit;
+            & .logo{
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+            & .Ul_links{
+                height:40px;
+                width:993px;
+                border: 1px solid #ffffff30;
+                border-bottom: none;
+                border-top: none;
+                display: flex;
+                list-style: none;
+                padding: 0 30px;
+                margin:0 30px;
+                text-align: center;
+                & .li_left_50{
+                    margin:0 0 0 50px;
+                }
+                & .li_last{
+                    margin: 0 0 0 auto;
+                }
+                // & li{
+                //     margin:0 0 0 
+                // }
+                & p{
+                    font-weight: normal;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    transform: translateY(50%);
+                }
+            }
+            & .links_icon{
+                display: flex;
+                width:128.6px;
+                justify-content: space-between;
+                & .link_user{
+                    position: relative;
+                    width:20px;
+                    
+                    & .head{
+                        position: absolute;
+                        left:6px;
+                    }
+                    & .body{
+                        position: absolute;
+                        left:3px;
+                        top:11px;
+                    }
+                }
+            }
+            
+        }
+    }
+    & .down_navbar{
+        height:100px;
+        color:$dark;
+        & span, & p, & .InputWrap input[type='text']::placeholder{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            font-family: 'Roboto';
+            text-transform: capitalize;
+
+        }
+        
+        
+        
+        & .HistoryOfAppWrap{
+            & span{
+                opacity: 0.4;
+            }
+            & img{
+
+                margin: 0 20px 0 5px;
+            }
+            & p{
+                display: inline-block;
+            }
+        }
+        & .InputWrap{
+            position: relative;
+            & input[type='text']{
+                width: 550px;
+                height: 40px;
+                background: #FFFFFF;
+                border:none;
+                outline: none;
+                box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+                padding: 0 0 0 20px;
+                &::placeholder{
+                    opacity: 0.4;
+                }
+            }
+            & img{
+                position: absolute;
+                top:10px;
+                right:20px;
+            }
+        }
+        & .DeliveryWrap{
+            & span{
+                display: inline-block;
+                transform: translate(-10px,-4px);
+            }
+        }
+    }
+    
+}
