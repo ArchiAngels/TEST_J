@@ -1,12 +1,12 @@
 @import '../../app/variables.scss';
 .Footer_container{
-    width:100vw;
+    // width:100vw;
     height:381px;
     background-image: linear-gradient(to bottom,#287194, #0F435B);
     & .Footer_content{
         max-width: $max_content_width;
         margin:0 auto;
-        padding: 80px 0;
+        padding: 80px 0 0 0;
         color:#fff;
         & ul{
             list-style: none;

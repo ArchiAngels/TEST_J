@@ -1,0 +1,78 @@
+@import '../../app/variables.scss';
+
+.Card__container{
+    width: 570px;
+    height: 474px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 7px 2px rgba(19, 53, 60, 0.15);
+    
+    & .card__content{
+        width:570px-50px;
+        height:474px-50px;
+        padding: 25px;
+        position: relative;
+        & .card__top, & .card__bottom{
+            width:inherit;
+            display: flex;
+            justify-content: space-between;
+        }
+        & .card__top{
+
+            font-family: Roboto;
+            font-style: normal;
+            
+            font-size: 12px;
+            text-transform: capitalize;
+            z-index:2;
+            position: relative;
+
+            color: #5C5C5C;
+            
+            & .opacityWhite{
+                font-weight: normal;
+                display: inline-block;
+                
+                opacity: 0.4;
+            }
+
+            & p{
+                font-weight: 500;
+                display: inline-block;
+                
+            }
+            & .top__left{
+                & .opacityWhite{
+                    text-indent: 5px;
+                }
+                & .left__text{
+                    display: inline-block;
+                    transform: translate(5px,-4px);
+                }
+                & .left__stick{
+                    width:1px;
+                    height:20px;
+                    display: inline-block;
+                    background: #5C5C5C;
+                    opacity: 0.3;
+                    margin: 0 10px;
+                    transform: translateY(9px);
+                }
+            }
+            & .top__right{
+                & .right__text{
+                    transform: translate(0px,5px);
+                    & p{
+                        text-indent: 10px;
+                    }
+                }
+            }
+        }
+        & .card__bottom{
+            position: absolute;
+            bottom: 25px;
+        }
+
+    }
+
+}
