@@ -8,16 +8,84 @@
     box-sizing: border-box;
     padding: 25px;
     margin:30px 0 0 0;
-    & .ProductPrice__title {
+    & h3, & p{
         font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 21px;
+        font-style: normal;
+        text-transform: capitalize;
+        line-height: 28px;
+    }
+    & .ProductPrice__title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #000000;
+    }
+    & .YourChoose{
+        margin: 25px 0 0 0;
+        display: flex;
+        justify-content: space-between;
 
-/* identical to box height */
-text-transform: capitalize;
+        & .choose{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 0 0 25px;
+            width:75%;
+            @media (min-width:1167px) {
+                .choose__stick{
+                    width:1px;
+                    height:28px;
+                    background: #5C5C5C;
+                    opacity: 0.3;
+                    // display: inline-block;
+                    // margin:0 25px;
+                    position: absolute;
+                    left: 98px;
+                }
+            }
+            & .choose__wrap{
+                min-width:121px;
+                height:28px;
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                }
+                & .select__wrap{
+                    width:28px;
+                    height:28px;
+                    border: 1px solid #5C5C5C;
+                    margin: 0 5px 0 0;
+                    float: left;
+                    box-sizing: border-box;
+                    position: relative;
+                    & img{
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+            }
+        }
+        & h3, & p{
+            font-weight: normal;
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #5C5C5C;
+        }
+        & h3{
+            // float: left;
+        }
+        & p{
+            opacity: 0.7;
+            // float: left;
+            position: absolute;
+            left: 37px;
+        }
 
-color: #000000;
+    }
+    & .ProductPrice__buttons{
+        display: flex;
+        justify-content: space-between;
+        margin:35px 0 0 0;
     }
 }

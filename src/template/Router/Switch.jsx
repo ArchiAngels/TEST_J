@@ -12,12 +12,12 @@ import Footer from '../Footer/Footer.jsx';
 function mySwitch(){
     return <>
         <Switch>
-            <Route exact path='/ProductCard'>
+            <Route path='/ProductCard'>
                 <NavBar/>
                 <Product />
                 <Footer/>
             </Route>
-            <Route exact path='/basket'>
+            <Route path='/basket'>
                 <Basket />
             </Route>
             <Route path='*'>

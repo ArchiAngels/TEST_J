@@ -1,0 +1,44 @@
+@import '../../app/variables.scss';
+
+.Button__container{
+    width:250px;
+    height:40px;
+    box-sizing: border-box;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.15s transform;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        transform: translateY(5px);
+    }
+
+    & p{
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        
+
+    }
+
+    
+    
+
+    &.themeFirst{
+        border: 2px solid $blue;
+        & p{
+            color: $blue;
+        }
+        
+    }
+    &.themeSecond{
+        background: $blue;
+        & p{
+            color:#fff;
+        }
+    }
+}
