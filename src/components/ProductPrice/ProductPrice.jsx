@@ -47,8 +47,8 @@ function ProductPrice(){
                 <YourChoose text={'Delivery service'} methods={['Delivery','Self-export']}/>
             </div>
             <div className="ProductPrice__buttons">
-                <Button title={'add to basket'} action={something} theme={'themeFirst'}/>
-                <Button title={'Make an order'} action={something} theme={'themeSecond'}/>
+                <Button title={'add to basket'} action={something} theme={0}/>
+                <Button title={'Make an order'} action={something} theme={1}/>
             </div>
         </div>
     </>

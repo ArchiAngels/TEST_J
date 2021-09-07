@@ -2,14 +2,38 @@
 
 .ProductCard_container{
     // width:100vw;
-    margin: 70px auto 100px auto;
+    margin: 0 auto 100px auto;
     & .productCard__content{
+        margin: 100px auto 0 auto;
         max-width: $max_content_width;
-        margin:0 auto;
+        // margin:0 auto;
         & .__card_wrap, & .__card_wrap .left__photos{
             margin: 30px 0 0 0;
             display: flex;
             justify-content: space-between;
+        }
+        & .testimonials{
+            flex-wrap: wrap;
+            & .testimonials__top{
+                width:100%;
+            }
+            & .testimonials__bottom_content{
+                margin : 0px 70px;
+                & .testimonials__p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    color: #5C5C5C;
+
+                    opacity: 0.7;
+                    max-width: 429px;
+                    margin:30px 0;
+                }
+            }
         }
         & h3{
             font-family: Roboto;

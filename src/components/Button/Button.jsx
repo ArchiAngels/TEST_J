@@ -7,8 +7,10 @@ function Button(props){
         console.log("Clicked button  "+props.title);
         e();
     }
+
+    let themeStyle = ['themeFirst','themeSecond']
     return <>
-        <div className={`Button__container ${props.theme}`} onClick={()=>{HandlerClick(props.action)}}>
+        <div className={`Button__container ${themeStyle[props.theme]}`} onClick={()=>{props.action ? HandlerClick(props.action) : HandlerClick()}}>
             <p>{props.title}</p>
         </div>
     </>
