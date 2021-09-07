@@ -7,6 +7,7 @@ import Photo from '../../components/Photos/Photo.jsx';
 import PriceAndLike from '../../components/PriceAndLike/PriceAndLike.jsx';
 import Specification from '../../components/Specification/Specification.jsx';
 import ProductPrice from '../../components/ProductPrice/ProductPrice.jsx';
+import RecommendProduct from '../../components/RecommendProduct/RecommendProduct.jsx';
 
 import Button from '../../components/Button/Button.jsx';
 import Opinion from '../Opinion/Opinion.jsx';
@@ -46,6 +47,10 @@ function Product(){
                             </div>
                         </div>
                     </div>
+                    
+                </div>
+                <div className="productCard__content">
+                    <RecommendProduct title='Accessories' />
                     
                 </div>
             </div>
